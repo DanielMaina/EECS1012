@@ -1,3 +1,4 @@
+// Done by Dan
 function validateForm(){
     var username = document.forms["create-account"]["username"].value;
     var email = document.forms["create-account"]["email"].value;
