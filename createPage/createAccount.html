@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Diary Login</title>
+    <link rel="stylesheet" type="text/css" href="../styles/createAccount.css" />
+    <script src="../createPage/createAccount.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+  <body>
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="card">
+        <h1>Create Account</h1>
+        <div class="card-body">
+            <form name="create-account" action="process_account.php" onsubmit="validateForm()" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+                <input type="submit" class="new" value="Create Account">               
+            </form>
+        </div>  
+        </div>
+    </div>
+  </body>
+</html>

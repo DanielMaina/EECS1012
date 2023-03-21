@@ -1,0 +1,73 @@
+body {
+    background-image: url("../assets/ThirstyBabyishHusky-size_restricted.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: infinite;
+    color: white;    
+  }
+  /* style for the page title */
+  h1 {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  /* style for card */
+  div.card {
+    width: 40vw;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+  }
+  
+  div.card-body{
+    padding-top: 30px;
+  }
+
+  div.card-bottom{
+    padding-bottom: 30px;
+  }
+
+  .new {
+    margin-left: 4vw;
+    margin-top: 10px;
+  }
+
+  /* style for the form labels */
+  label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+  }
+  
+  /* style for the form inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* style for the login button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* style for the create account button */
+  button {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
