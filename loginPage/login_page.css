@@ -1,0 +1,89 @@
+/* done by Mahdiyar */
+body {
+  background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/02/Dark-Blue-Background-For-Free-Download.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.login-box h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.login-box input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-box input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.create-account {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.create-account span {
+  margin-right: 10px;
+}
+
+.create-account a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.create-account a:hover {
+  color: #0056b3;
+}
+
