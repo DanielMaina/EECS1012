@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">    
   </head>
   <body>
     <div class="grid-container">
@@ -49,32 +49,32 @@
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="https://www.theweathernetwork.com/ca" target="_blank">
               <span class="material-icons-outlined">thermostat</span> Weather
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="https://www.tsn.ca/" target="_blank">
               <span class="material-icons-outlined">sports_basketball</span> Sports
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="https://www.coindesk.com/" target="_blank">
               <span class="material-icons-outlined">currency_bitcoin</span> Crypto
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="https://ca.finance.yahoo.com/" target="_blank">
               <span class="material-icons-outlined">attach_money</span> Stocks
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm" target="_blank">
               <span class="material-icons-outlined">school</span> University Courses
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="https://www.yorku.ca/parking/wp-content/uploads/sites/51/2022/07/2D-KEELE_Map.pdf" target="_blank">
               <span class="material-icons-outlined">map</span> York University Map 
             </a>
           </li>
@@ -88,28 +88,27 @@
       <!-- End Sidebar -->
 
       <!-- Main -->
-      <main class="main-container">
+      <main class="main-container">        
         <div class="main-title">
           <h2>Toronto, CA</h2>
+        </div>
+        <div class="card" style="background: rgba(255, 255, 0, 0.2)">
+          <div style="display: flex;justify-content: center">
+            <div class="weather loading">
+              <div class="card-inner">                     
+                <h1 class="temp">11°C</h1>
+                <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="" class="icon" style="margin-left: 3vw;" />
+              </div>
+              <div class="description">Cloudy</div>
+              </div>
+          </div> 
         </div>
 
         <div class="main-cards">
 
           <div class="card">
-            <h3>WEATHER</h3>
-            <div class="weather loading">
-            <div class="card-inner">                     
-              <h1 class="temp">11°C</h1>
-              <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="" class="icon" />
-            </div>
-            <div class="description">Cloudy</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>CRYPTO</h3>
             <div class="crypto loading">
-            <div class="card-inner">                     
+            <div class="card-inner" style="justify-content: space-between;">                     
               <h1>&#36;<span class="priceC">32</span></h1>
               <div class="description">USD</div>
             </div>
@@ -118,22 +117,33 @@
           </div>
 
           <div class="card">
-            <h3>SPORTS</h3>
-            <div class="sports loading">
-            <div class="card-inner">                     
-              <h1>&#36;<span class="priceC">32</span></h1>
+            <div class="">
+            <div class="card-inner" style="justify-content: space-between;">                     
+              <h1>&#36;<span class="priceB">32</span></h1>
               <div class="description">USD</div>
             </div>
-            <div class="description">Bitcoin</div>
+            <div class="description">Ethereum</div>
             </div>
           </div>
 
           <div class="card">
-            <div class="card-inner">
-              <h3>ALERTS</h3>
-              <span class="material-icons-outlined">notification_important</span>
+            <div class="">
+            <div class="card-inner" style="justify-content: space-between;">                     
+              <h1>&#36;<span class="priceD">32</span></h1>
+              <div class="description">USD</div>
             </div>
-            <h1>56</h1>
+            <div class="description">Litecoin</div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="">
+            <div class="card-inner" style="justify-content: space-between;">                     
+              <h1>&#36;<span class="priceA">32</span></h1>
+              <div class="description">USD</div>
+            </div>
+            <div class="description">Doge Coin</div>
+            </div>
           </div>
 
         </div>
@@ -149,7 +159,6 @@
             <h2 class="chart-title">Purchase and Sales Orders</h2>
             <div id="area-chart"></div>
           </div>
-
         </div>
       </main>
       <!-- End Main -->
@@ -168,6 +177,5 @@
     <script src="js/scripts.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/crypto.js"></script>
-    <script src="js/sports.js"></script>
   </body>
 </html>
