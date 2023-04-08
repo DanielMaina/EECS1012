@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>EECS 1012 Final Project</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="main-title">
+          <h2>York University - EECS 1012 Final Project</h2>
+        </div>
+        <div class="header-right">
+          <img src="./assets/images/York_Logo.png" alt="" style="height:10vh;width:7vw;margin-top:1vh;"/>
+          <!-- <span class="material-icons-outlined">account_circle</span> -->
+        </div>
+      </header>
+      <!-- End Header -->
+
+           <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <!-- <span class="material-icons-outlined">code</span>  -->
+            <img src="./assets/images/York_Logo.png" alt="" style="height:10vh;width:7vw;"/>
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_self">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">thermostat</span> Weather
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">sports_basketball</span> Sports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">currency_bitcoin</span> Crypto
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">attach_money</span> Stocks
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">school</span> University Courses
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">map</span> York University Map 
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>Toronto, CA</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <h3>WEATHER</h3>
+            <div class="weather loading">
+            <div class="card-inner">                     
+              <h1 class="temp">11°C</h1>
+              <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="" class="icon" />
+            </div>
+            <div class="description">Cloudy</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>CRYPTO</h3>
+            <div class="crypto loading">
+            <div class="card-inner">                     
+              <h1>&#36;<span class="priceC">32</span></h1>
+              <div class="description">USD</div>
+            </div>
+            <div class="description">Bitcoin</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>SPORTS</h3>
+            <div class="sports loading">
+            <div class="card-inner">                     
+              <h1>&#36;<span class="priceC">32</span></h1>
+              <div class="description">USD</div>
+            </div>
+            <div class="description">Bitcoin</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>ALERTS</h3>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+            <h1>56</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top 5 Products</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Purchase and Sales Orders</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script type="module" src="script.js"></script> -->
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/crypto.js"></script>
+    <script src="js/sports.js"></script>
+  </body>
+</html>
