@@ -17,7 +17,6 @@ $.ajax(liveprice).done(function (response){
     ltc.innerHTML = response.litecoin.usd;
     eth.innerHTML = response.ethereum.usd;
     doge.innerHTML = response.dogecoin.usd;
-    console.log(response);
 
 });
 
